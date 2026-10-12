@@ -1,0 +1,1101 @@
+{
+  "schemaVersion": 1,
+  "capturedOn": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "source": {
+    "fileKey": "h2Yu0Mg9J23KCatfp4uBgh",
+    "pages": [
+      {
+        "id": "0:1",
+        "name": "00 封面"
+      },
+      {
+        "id": "122:56",
+        "name": "01 登录与注册"
+      },
+      {
+        "id": "156:56",
+        "name": "02 探索与搜索"
+      },
+      {
+        "id": "194:56",
+        "name": "03 社区与帖子"
+      },
+      {
+        "id": "278:56",
+        "name": "04 发布与日志"
+      },
+      {
+        "id": "363:56",
+        "name": "05 手工工坊"
+      },
+      {
+        "id": "375:56",
+        "name": "06 Meetup 活动"
+      },
+      {
+        "id": "408:56",
+        "name": "07 官方活动"
+      },
+      {
+        "id": "430:56",
+        "name": "08 品牌大使"
+      },
+      {
+        "id": "451:56",
+        "name": "09 消息与通知"
+      },
+      {
+        "id": "501:56",
+        "name": "10 个人主页与收藏"
+      },
+      {
+        "id": "134:8094",
+        "name": "11 个人资料与设置"
+      },
+      {
+        "id": "548:56",
+        "name": "12 积分与签到"
+      },
+      {
+        "id": "557:56",
+        "name": "13 通用页面与导航"
+      }
+    ],
+    "url": "https://www.figma.com/design/h2Yu0Mg9J23KCatfp4uBgh/Craftime-UI"
+  },
+  "coverage": {
+    "textStyles": {
+      "status": "verified",
+      "scope": "Group/Craftime/Web/EN",
+      "count": 9
+    },
+    "components": {
+      "status": "existing_asset_candidates",
+      "count": 91,
+      "publicationStatus": "unverified",
+      "platform": "inspect each component's ancestor section before use",
+      "note": "These are existing business components, not a verified universal foundation library. Names alone do not establish platform, status, or intended use."
+    },
+    "colors": {
+      "status": "not_codified_in_local_styles_or_variables"
+    },
+    "spacing": {
+      "status": "not_codified_in_local_variables"
+    },
+    "radii": {
+      "status": "not_codified_in_local_variables"
+    },
+    "effects": {
+      "status": "no_local_effect_styles"
+    },
+    "note": "Live Figma definitions take precedence. Missing local tokens do not prove that visual rules or remote assets do not exist. Read the relevant source nodes; do not infer global standards from isolated screens."
+  },
+  "textStyles": [
+    {
+      "id": "S:4ea8c9de2815e5da21df5463ac10c7e5a8e14946,",
+      "key": "4ea8c9de2815e5da21df5463ac10c7e5a8e14946",
+      "name": "Group/Craftime/Web/EN/Heading/Page",
+      "description": "",
+      "remote": false,
+      "fontName": {
+        "family": "Open Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "wdth": 100
+        }
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 40
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "id": "S:79e9f00f3d9e4e0cd95185db6c6770b0a6d2410c,",
+      "key": "79e9f00f3d9e4e0cd95185db6c6770b0a6d2410c",
+      "name": "Group/Craftime/Web/EN/Heading/Section",
+      "description": "",
+      "remote": false,
+      "fontName": {
+        "family": "Open Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600,
+          "wdth": 100
+        }
+      },
+      "fontSize": 24,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 32
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "id": "S:3a9988ce001116607a09f687ae968ae6064ccd3c,",
+      "key": "3a9988ce001116607a09f687ae968ae6064ccd3c",
+      "name": "Group/Craftime/Web/EN/Body/Default",
+      "description": "",
+      "remote": false,
+      "fontName": {
+        "family": "Open Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 24
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "id": "S:1cd7105eb5839485301e51fa2f169706e9e1dda7,",
+      "key": "1cd7105eb5839485301e51fa2f169706e9e1dda7",
+      "name": "Group/Craftime/Web/EN/Body/Compact",
+      "description": "",
+      "remote": false,
+      "fontName": {
+        "family": "Open Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 20
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "id": "S:8b22b25c234f8d446702ab78b09a6f1eae0ddc5a,",
+      "key": "8b22b25c234f8d446702ab78b09a6f1eae0ddc5a",
+      "name": "Group/Craftime/Web/EN/Body/Caption",
+      "description": "",
+      "remote": false,
+      "fontName": {
+        "family": "Open Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 18
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "id": "S:a8762c433c8467589fa56ca816b3262455e517b0,",
+      "key": "a8762c433c8467589fa56ca816b3262455e517b0",
+      "name": "Group/Craftime/Web/EN/Label/Form",
+      "description": "",
+      "remote": false,
+      "fontName": {
+        "family": "Open Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 20
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "id": "S:1b71bf03eba1f78ecb936ce32a2041d398311540,",
+      "key": "1b71bf03eba1f78ecb936ce32a2041d398311540",
+      "name": "Group/Craftime/Web/EN/Body/Support",
+      "description": "",
+      "remote": false,
+      "fontName": {
+        "family": "Open Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 22
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "id": "S:a5ade5f2d7774eaef52a98b86f2249c1c7490bb6,",
+      "key": "a5ade5f2d7774eaef52a98b86f2249c1c7490bb6",
+      "name": "Group/Craftime/Web/EN/Button/Primary/S",
+      "description": "",
+      "remote": false,
+      "fontName": {
+        "family": "Open Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600,
+          "wdth": 100
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 18
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    },
+    {
+      "id": "S:ac3f2f21ada311bcedee5414086aca62f8775576,",
+      "key": "ac3f2f21ada311bcedee5414086aca62f8775576",
+      "name": "Group/Craftime/Web/EN/Button/Outline/S",
+      "description": "",
+      "remote": false,
+      "fontName": {
+        "family": "Open Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PIXELS",
+        "value": 18
+      },
+      "letterSpacing": {
+        "unit": "PIXELS",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "textCase": "ORIGINAL",
+      "textDecoration": "NONE"
+    }
+  ],
+  "localAssetCounts": {
+    "paintStyles": 0,
+    "effectStyles": 0,
+    "variableCollections": 0,
+    "variables": 0
+  },
+  "componentsByPage": [
+    {
+      "pageId": "122:56",
+      "name": "01 登录与注册",
+      "topLevel": [
+        {
+          "id": "141:21588",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "126:118",
+          "name": "App",
+          "type": "SECTION"
+        },
+        {
+          "id": "147:24384",
+          "name": "H5",
+          "type": "SECTION"
+        },
+        {
+          "id": "149:23468",
+          "name": "共用切图",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 5,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "137:8636",
+          "key": "5257d8024942548f285992087bc5f85f46e27562",
+          "name": "登录页"
+        },
+        {
+          "id": "128:3902",
+          "key": "ae1b0f1adb12b7e0678dfc2442419cf1f678b09e",
+          "name": "邮箱密码登录"
+        },
+        {
+          "id": "128:3736",
+          "key": "6e424ebe4c26535c221743f91c5798e357ad7f21",
+          "name": "注册"
+        },
+        {
+          "id": "128:910",
+          "key": "bcc5ef42c767cf0f8eacb031d39dab7ed483982e",
+          "name": "验证码"
+        },
+        {
+          "id": "128:3682",
+          "key": "67af75ef319fc9c4af25842d3d7b0f4379b8c7af",
+          "name": "重置密码"
+        }
+      ]
+    },
+    {
+      "pageId": "156:56",
+      "name": "02 探索与搜索",
+      "topLevel": [
+        {
+          "id": "166:56",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "156:57",
+          "name": "App",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 7,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "157:36309",
+          "key": "347e9cfd694bb32677c694288af0f93362cdbad9",
+          "name": "卡片-热帖"
+        },
+        {
+          "id": "157:36664",
+          "key": "2ee83126b65a449f1d18065d8118027763c43881",
+          "name": "头像"
+        },
+        {
+          "id": "157:36941",
+          "key": "ed0de122d802fa8aefa53c10b40cedcf181e7df8",
+          "name": "卡片-小"
+        },
+        {
+          "id": "176:14787",
+          "key": "4d9590530d934657a2e30aca31f4539fe626cc9e",
+          "name": "内容卡片"
+        },
+        {
+          "id": "176:19117",
+          "key": "ed2217960a7255267567b89f2c6d94e984238959",
+          "name": "卡片-用户"
+        },
+        {
+          "id": "157:50350",
+          "key": "76a474e64f2b6fe7fc52855253ab0b48c37eac03",
+          "name": "Frame 2036095926"
+        },
+        {
+          "id": "157:34123",
+          "key": "927bfd75a1ecaa7da51eea618b1a0fd1e333a344",
+          "name": "Frame 2036096079"
+        }
+      ]
+    },
+    {
+      "pageId": "194:56",
+      "name": "03 社区与帖子",
+      "topLevel": [
+        {
+          "id": "220:14810",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "204:6027",
+          "name": "App",
+          "type": "SECTION"
+        },
+        {
+          "id": "246:17322",
+          "name": "H5",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 8,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "223:50070",
+          "key": "784e96dcd859aaaf61978f06019aa4acdc82a397",
+          "name": "一级导航栏/顶部主标签栏"
+        },
+        {
+          "id": "223:50072",
+          "key": "f594abaea2b662eea5e46af5c7f4a0657685606c",
+          "name": "二级分类标签栏/ 横向筛选标签"
+        },
+        {
+          "id": "223:50089",
+          "key": "e5bf847e57bacd40da659765a940b936a2326e99",
+          "name": "精选"
+        },
+        {
+          "id": "223:50127",
+          "key": "0609307551c7c0e0c33ecc2acaeecc39c8526830",
+          "name": "头像"
+        },
+        {
+          "id": "271:18761",
+          "key": "20df088b6550a88808f920dd2bea9354dddd2575",
+          "name": "Frame 2036095960"
+        },
+        {
+          "id": "195:21601",
+          "key": "21d022f392adea6e1744dbf4642c1493cc5963e1",
+          "name": "发帖用户信息"
+        },
+        {
+          "id": "223:51472",
+          "key": "ad9a5eb17819261f8c6d1b7c6242f5ed86553420",
+          "name": "精选"
+        },
+        {
+          "id": "237:35628",
+          "key": "eb2b84b4546d02846ee6511963cb332aecfe471f",
+          "name": "Frame 2036095960"
+        }
+      ]
+    },
+    {
+      "pageId": "278:56",
+      "name": "04 发布与日志",
+      "topLevel": [
+        {
+          "id": "293:2043",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "278:57",
+          "name": "App",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 6,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "330:3853",
+          "key": "9721a1eb2b5d6575de091fc723c422bd364213b2",
+          "name": "Frame 2036095747"
+        },
+        {
+          "id": "360:4242",
+          "key": "41799b8f776b5be2e2ebb83cd941e0416da8c7c9",
+          "name": "Frame 2036095661"
+        },
+        {
+          "id": "360:4247",
+          "key": "f545bb2b3a30a098366f442452c2b41d282a609a",
+          "name": "Frame 2036095685"
+        },
+        {
+          "id": "769:335593",
+          "key": "e4f3fcae647cdf33b84c3a6455f923e0472035ac",
+          "name": "Frame 2036095927"
+        },
+        {
+          "id": "283:1028",
+          "key": "f80e0fff84d2ec3e2b479c3f170209127b3d2352",
+          "name": "Group 2036096159"
+        },
+        {
+          "id": "283:1821",
+          "key": "22db314f93982640b6ad97b90bde178f62c1deef",
+          "name": "卡片-商品"
+        }
+      ]
+    },
+    {
+      "pageId": "363:56",
+      "name": "05 手工工坊",
+      "topLevel": [
+        {
+          "id": "764:18943",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "363:57",
+          "name": "App",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 2,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "733:106646",
+          "key": "c8706eafdd296777493a8c94b49f4d3c6a4e51bc",
+          "name": "头像"
+        },
+        {
+          "id": "733:106923",
+          "key": "9661837e6c023087fcc7d04d046e6b5eca75dbb1",
+          "name": "卡片-小"
+        }
+      ]
+    },
+    {
+      "pageId": "375:56",
+      "name": "06 Meetup 活动",
+      "topLevel": [
+        {
+          "id": "375:57",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "375:59",
+          "name": "App",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 0,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": []
+    },
+    {
+      "pageId": "408:56",
+      "name": "07 官方活动",
+      "topLevel": [
+        {
+          "id": "408:57",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "408:59",
+          "name": "App",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 0,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": []
+    },
+    {
+      "pageId": "430:56",
+      "name": "08 品牌大使",
+      "topLevel": [
+        {
+          "id": "430:57",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "430:59",
+          "name": "App",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 2,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "447:1949",
+          "key": "a841503e6a5710a5d95c7739e4e11feb796f7bf5",
+          "name": "Ambassador Card / Skeleton"
+        },
+        {
+          "id": "769:355346",
+          "key": "da9607d416e0cbda7a06a560cbff7febd25729d1",
+          "name": "Ambassador Card / Skeleton"
+        }
+      ]
+    },
+    {
+      "pageId": "451:56",
+      "name": "09 消息与通知",
+      "topLevel": [
+        {
+          "id": "451:57",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "451:59",
+          "name": "App",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 31,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "453:282",
+          "key": "12d0f543902486d07dec06d53b8ca16c6cdc81e9",
+          "name": "Frame 2036096139"
+        },
+        {
+          "id": "453:300",
+          "key": "b009c59977b77e81489fbeadeab6455c4a5d1d8c",
+          "name": "Frame 2036096156"
+        },
+        {
+          "id": "454:461",
+          "key": "ba769361c0d300f2f3a9ab6c07fc8c5776660f86",
+          "name": "消息列表 / 无消息"
+        },
+        {
+          "id": "461:2081",
+          "key": "591f4f8443b5aaa356392ff4851d20465d324fb6",
+          "name": "聊天消息"
+        },
+        {
+          "id": "461:2102",
+          "key": "7729c97dad04ff72482c6f3578a51ef437fda4be",
+          "name": "聊天消息"
+        },
+        {
+          "id": "461:2123",
+          "key": "8e7cc1ec919564eae4a8715f738762120a1bee9c",
+          "name": "评论输入框"
+        },
+        {
+          "id": "461:2126",
+          "key": "6a5039f0bda750ef353f2568ee0a0e327162421d",
+          "name": "会话头部栏"
+        },
+        {
+          "id": "475:4682",
+          "key": "c69614cd499381d15165f932b3257d7950df0ebd",
+          "name": "Frame 2036096066"
+        },
+        {
+          "id": "484:5220",
+          "key": "d8acbb0f7e7f5a38afcb954dd45c6a66da33bdee",
+          "name": "Frame 2036096139"
+        },
+        {
+          "id": "491:7309",
+          "key": "528ba493e09d72b9986eb0a2149d0aebcfd9ab05",
+          "name": "Frame 2036096174"
+        },
+        {
+          "id": "491:7329",
+          "key": "2aaa15e74a6a78a062fedffe8318af1a9775cf07",
+          "name": "Frame 2036096180"
+        },
+        {
+          "id": "495:9406",
+          "key": "072ae5d22b55b964deb7b5c8d78de3a818e5df64",
+          "name": "Frame 2036096259"
+        },
+        {
+          "id": "498:11053",
+          "key": "8801dcdb342f8fdc3f4f1055ff25e1dc1f60c4ac",
+          "name": "评论输入框"
+        },
+        {
+          "id": "498:12324",
+          "key": "fb6d6a6c5a8b31bc7fe5ecd5d8c217e92f0980ce",
+          "name": "Frame 2036096141"
+        },
+        {
+          "id": "769:197567",
+          "key": "8796447103fc76d049197b3090f2876ab1bf0413",
+          "name": "顶部标题栏"
+        },
+        {
+          "id": "769:197585",
+          "key": "5b79538ede063e173ebbb555474aae653f88f6cd",
+          "name": "Frame 2036095926"
+        },
+        {
+          "id": "769:200042",
+          "key": "d9718d31877305a1bac03536dcee683ebfc59ce1",
+          "name": "Frame 2036096066"
+        },
+        {
+          "id": "769:238345",
+          "key": "69e1b2542c60ea9435f7be5633f7b8445b6df352",
+          "name": "Frame 2036095973"
+        },
+        {
+          "id": "769:238606",
+          "key": "da49c5aa9fbc0eb8d7b8dafbfb6480b2f004ae50",
+          "name": "Frame 2036096139"
+        },
+        {
+          "id": "769:238624",
+          "key": "4a8ffac60e31e698bc30c382acc3f259101177fe",
+          "name": "Frame 2036096156"
+        },
+        {
+          "id": "769:238895",
+          "key": "62a53356cfdd057303a10e235d69039dfa8b014b",
+          "name": "聊天消息"
+        },
+        {
+          "id": "769:238916",
+          "key": "7fb8b6a53cc209fd5871ff5a75e349f67748eb75",
+          "name": "聊天消息"
+        },
+        {
+          "id": "769:238937",
+          "key": "4ebcb72ccd24b50ea1684d3160f4cca9099cfb13",
+          "name": "评论输入框"
+        },
+        {
+          "id": "769:238940",
+          "key": "af801cdfe058872a6680c5372f53a61ca15d27d7",
+          "name": "会话头部栏"
+        },
+        {
+          "id": "769:239467",
+          "key": "8bab4e9fabdf6fc6e3c73cf034dd09e6b495b47f",
+          "name": "Frame 2036096141"
+        },
+        {
+          "id": "769:239736",
+          "key": "1c76e4a393b801c3b99d0cb9e54d8668aff18dc4",
+          "name": "Frame 2036096139"
+        },
+        {
+          "id": "769:243746",
+          "key": "9595246e062e49cfe509844968a00cc6d5320525",
+          "name": "Frame 2036096259"
+        },
+        {
+          "id": "769:245442",
+          "key": "8e2029dc4735b7605b39fdb3b9a3ede04f9e8bcb",
+          "name": "Frame 2036096174"
+        },
+        {
+          "id": "769:245462",
+          "key": "b7c286f15fe111b6cf8f84a3c9e7a10b56998171",
+          "name": "Frame 2036096180"
+        },
+        {
+          "id": "455:667",
+          "key": "a5c33269333a9de0740cce4e3f27bfbafb4c597c",
+          "name": "Frame 2036096139"
+        },
+        {
+          "id": "769:133159",
+          "key": "715432dfbcae1dbbf3a1d3c41e5e451c05a55d01",
+          "name": "Frame 2036096139"
+        }
+      ]
+    },
+    {
+      "pageId": "501:56",
+      "name": "10 个人主页与收藏",
+      "topLevel": [
+        {
+          "id": "501:57",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "501:61",
+          "name": "App",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 13,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "513:7689",
+          "key": "f9d59f5f4d06f11ad72c4045638eed9bd7c292f3",
+          "name": "收藏"
+        },
+        {
+          "id": "513:7711",
+          "key": "3139a934a3eef8d3a0c1f5904956d1c9f4d06dcd",
+          "name": "移动到"
+        },
+        {
+          "id": "769:289133",
+          "key": "b129078a64adde6f1c0a11fa15ec8b90bf50cbfd",
+          "name": "收藏列表"
+        },
+        {
+          "id": "769:289790",
+          "key": "0236739cea13b476ac2fb7db1bfa916734f39eb8",
+          "name": "列表"
+        },
+        {
+          "id": "769:289925",
+          "key": "e3dd8adc64625b80a961463c3db575c8a797923c",
+          "name": "编辑"
+        },
+        {
+          "id": "769:291042",
+          "key": "1dbb22eafb8d9960687ae2608085f9f59782f900",
+          "name": "复选框-未全选"
+        },
+        {
+          "id": "514:9708",
+          "key": "18f4edd55f4be6e246c6740265554388f5b904aa",
+          "name": "历史"
+        },
+        {
+          "id": "514:9719",
+          "key": "845639e2bc895eb9f12e0e7b6cbdc81fb2d3181a",
+          "name": "顶部导航栏"
+        },
+        {
+          "id": "502:392",
+          "key": "07e3b479a378ea23032d488341ac5dbb598c8628",
+          "name": "笔记"
+        },
+        {
+          "id": "502:415",
+          "key": "782a876c82e1a4661c40c8e990c888ced967207b",
+          "name": "线下活动"
+        },
+        {
+          "id": "504:983",
+          "key": "ba40883b5ebbc7e72bb09750ac9fe754e9693812",
+          "name": "添加"
+        },
+        {
+          "id": "504:998",
+          "key": "34e6081bb5a905c0e61c2da6e5492a97ffd837e5",
+          "name": "收藏夹"
+        },
+        {
+          "id": "510:4877",
+          "key": "e406db685ffab8c38602e91b0853a73e0a51f80b",
+          "name": "卡片-日志"
+        }
+      ]
+    },
+    {
+      "pageId": "134:8094",
+      "name": "11 个人资料与设置",
+      "topLevel": [
+        {
+          "id": "143:119",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "134:8095",
+          "name": "App",
+          "type": "SECTION"
+        },
+        {
+          "id": "147:24476",
+          "name": "H5",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 7,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "769:169309",
+          "key": "64e4a9cfc013c8858d9a08071d6430d708601882",
+          "name": "Frame 2036096070"
+        },
+        {
+          "id": "769:169411",
+          "key": "2216afee01d17eaa41c749473a52bbda541e2327",
+          "name": "关于/In"
+        },
+        {
+          "id": "769:170972",
+          "key": "b6626354e28784e36e77f8387663f9c0b4e3a81f",
+          "name": "Frame 2036096070"
+        },
+        {
+          "id": "769:171270",
+          "key": "36cea3d3b07ad29431f45520c8974344ab30b0b4",
+          "name": "拉黑用户"
+        },
+        {
+          "id": "769:172025",
+          "key": "533da5c67e5197564f0dad17ee4bc88ab304b0a4",
+          "name": "Group 2036095870"
+        },
+        {
+          "id": "769:172148",
+          "key": "390f1b2e4005bb2d5b9ffc58b278d63cef26e996",
+          "name": "有帮助-按钮"
+        },
+        {
+          "id": "769:172152",
+          "key": "f4200ac18353892f69070718c8e30b01c1da0250",
+          "name": "无帮助-按钮"
+        }
+      ]
+    },
+    {
+      "pageId": "548:56",
+      "name": "12 积分与签到",
+      "topLevel": [
+        {
+          "id": "548:57",
+          "name": "Web",
+          "type": "SECTION"
+        },
+        {
+          "id": "548:59",
+          "name": "App",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 10,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": [
+        {
+          "id": "556:3600",
+          "key": "d960eec22509c16a2a236cf14401e3ec83960eff",
+          "name": "创建&互动-面"
+        },
+        {
+          "id": "556:3801",
+          "key": "60a82e10a79d6003a1b241fc5f011469df07d555",
+          "name": "Group 2036095830"
+        },
+        {
+          "id": "556:3936",
+          "key": "f6eaed90e1c8cd9fd90f698c52a01f048223fc21",
+          "name": "任务"
+        },
+        {
+          "id": "556:3961",
+          "key": "c9d79577db6e318bfdb418dfb41a4dbedffa3b64",
+          "name": "卡片-商品"
+        },
+        {
+          "id": "556:3990",
+          "key": "e55c11bfaf52771b68581524dcbc221fe3982b8f",
+          "name": "商城"
+        },
+        {
+          "id": "556:4010",
+          "key": "37f7fc503ab5ba1e046b5e53311e613f6e829d6c",
+          "name": "历史"
+        },
+        {
+          "id": "769:165310",
+          "key": "be42b5717bb4ccea31cd763f8e8728042605e813",
+          "name": "积分消息"
+        },
+        {
+          "id": "769:165406",
+          "key": "7ae8d69b8f1af891e19544f405254e549802d9d3",
+          "name": "地址"
+        },
+        {
+          "id": "769:165476",
+          "key": "57afeaa5f142df66a041bc435cbe64ee8cb91726",
+          "name": "Group 2036095851"
+        },
+        {
+          "id": "769:165525",
+          "key": "db53e0acbebac574a8e7366f52d9ba6236ee284b",
+          "name": "内容1"
+        }
+      ]
+    },
+    {
+      "pageId": "557:56",
+      "name": "13 通用页面与导航",
+      "topLevel": [
+        {
+          "id": "557:57",
+          "name": "App",
+          "type": "SECTION"
+        },
+        {
+          "id": "557:59",
+          "name": "H5",
+          "type": "SECTION"
+        }
+      ],
+      "componentCount": 0,
+      "componentSetCount": 0,
+      "componentSets": [],
+      "standalone": []
+    }
+  ]
+}

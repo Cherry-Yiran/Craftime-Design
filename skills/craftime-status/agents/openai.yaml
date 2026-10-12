@@ -1,0 +1,7 @@
+interface:
+  display_name: "Craftime · 查看使用情况"
+  short_description: "根据当前聊天的执行证据，查看是否启用规范、读取规则并完成交付检查"
+  default_prompt: "使用 $craftime-status 查看本聊天最近的设计任务是否实际使用了 Craftime 规范插件。"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Craftime · 检查设计"
+  short_description: "只读检查 Figma 设计的规范引用，展示启用状态、问题证据和检查结果"
+  default_prompt: "使用 $craftime-review 检查当前 Figma 画板，显示规范启用状态与有证据的检查结果。"
+
+policy:
+  allow_implicit_invocation: true

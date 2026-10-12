@@ -1,0 +1,7 @@
+interface:
+  display_name: "Craftime · 更新规范"
+  short_description: "读取实时 Craftime 规范并核对变化，展示覆盖范围和索引更新状态"
+  default_prompt: "使用 $craftime-refresh 核对最新 Craftime 规范，显示读取范围并报告变化。"
+
+policy:
+  allow_implicit_invocation: true

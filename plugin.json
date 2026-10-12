@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "akazaakari950718@gmail.com",
+    "name": "黑芝麻"
+  },
+  "description": "让 Codex 按 Craftime UI 实时规范设计、检查 Figma 页面，并维护规范索引。",
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "capabilities": [
+          "Read",
+          "Write",
+          "Interactive"
+        ],
+        "category": "Creativity",
+        "defaultPrompt": [
+          "使用 Craftime Design，按规范在指定 Figma 文件里设计页面。",
+          "使用 Craftime Design，检查这个 Figma 画板是否符合规范。",
+          "使用 Craftime Design，读取最新规范并报告资产索引的变化。"
+        ],
+        "developerName": "黑芝麻",
+        "displayName": "Craftime Design",
+        "longDescription": "提供 Craftime 规范开关面板。开启后将工作流作为可见附件挂到当前聊天输入框，之后直接描述页面需求即可；页面设计仍读取实时 Figma 并检查引用与截图。需要 Codex 桌面版、Node.js 22 及 Figma 连接和文件权限。",
+        "shortDescription": "按 Craftime 规范设计和检查页面",
+        "logo": "./assets/craftime-logo.svg",
+        "composerIcon": "./assets/craftime-logo.svg"
+      },
+      "onboardingSkill": "./skills/craftime-setup/SKILL.md"
+    }
+  },
+  "keywords": [
+    "craftime",
+    "figma",
+    "design-system"
+  ],
+  "name": "craftime-design",
+  "version": "0.3.1"
+}

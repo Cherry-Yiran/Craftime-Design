@@ -1,0 +1,7 @@
+interface:
+  display_name: "Craftime · 接入检查"
+  short_description: "验证 Figma 连接与 Craftime 规范读取，显示状态并提供设计和检查入口"
+  default_prompt: "使用 $craftime-setup 检查 Craftime 接入状态，并显示可以开始设计或检查的入口。"
+
+policy:
+  allow_implicit_invocation: true

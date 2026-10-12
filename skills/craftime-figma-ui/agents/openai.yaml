@@ -1,0 +1,7 @@
+interface:
+  display_name: "Craftime · 按规范设计"
+  short_description: "按 Craftime 规范设计 Figma 页面，显示启用状态和交付检查结果"
+  default_prompt: "使用 $craftime-figma-ui 按 Craftime 规范设计页面，先显示启用状态，完成后给出规范检查结果。"
+
+policy:
+  allow_implicit_invocation: true

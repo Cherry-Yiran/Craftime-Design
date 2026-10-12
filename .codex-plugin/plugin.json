@@ -1,0 +1,41 @@
+{
+  "apps": "./.app.json",
+  "interface": {
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "category": "Creativity",
+    "defaultPrompt": [
+      "\u4f7f\u7528 Craftime Design\uff0c\u6309\u89c4\u8303\u5728\u6307\u5b9a Figma \u6587\u4ef6\u91cc\u8bbe\u8ba1\u9875\u9762\u3002",
+      "\u4f7f\u7528 Craftime Design\uff0c\u68c0\u67e5\u8fd9\u4e2a Figma \u753b\u677f\u662f\u5426\u7b26\u5408\u89c4\u8303\u3002",
+      "\u4f7f\u7528 Craftime Design\uff0c\u8bfb\u53d6\u6700\u65b0\u89c4\u8303\u5e76\u62a5\u544a\u8d44\u4ea7\u7d22\u5f15\u7684\u53d8\u5316\u3002"
+    ],
+    "developerName": "\u9ed1\u829d\u9ebb",
+    "displayName": "Craftime Design",
+    "longDescription": "\u63d0\u4f9b Craftime \u89c4\u8303\u5f00\u5173\u9762\u677f\u3002\u5f00\u542f\u540e\u5c06\u5de5\u4f5c\u6d41\u4f5c\u4e3a\u53ef\u89c1\u9644\u4ef6\u6302\u5230\u5f53\u524d\u804a\u5929\u8f93\u5165\u6846\uff0c\u4e4b\u540e\u76f4\u63a5\u63cf\u8ff0\u9875\u9762\u9700\u6c42\u5373\u53ef\uff1b\u9875\u9762\u8bbe\u8ba1\u4ecd\u8bfb\u53d6\u5b9e\u65f6 Figma \u5e76\u68c0\u67e5\u5f15\u7528\u4e0e\u622a\u56fe\u3002\u9700\u8981 Codex \u684c\u9762\u7248\u3001Node.js 22 \u53ca Figma \u8fde\u63a5\u548c\u6587\u4ef6\u6743\u9650\u3002",
+    "shortDescription": "\u6309 Craftime \u89c4\u8303\u8bbe\u8ba1\u548c\u68c0\u67e5\u9875\u9762",
+    "logo": "./assets/craftime-logo.svg",
+    "composerIcon": "./assets/craftime-logo.svg"
+  },
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/craftime-setup/SKILL.md"
+    }
+  },
+  "name": "craftime-design",
+  "version": "0.3.1",
+  "description": "\u8ba9 Codex \u6309 Craftime UI \u5b9e\u65f6\u89c4\u8303\u8bbe\u8ba1\u3001\u68c0\u67e5 Figma \u9875\u9762\uff0c\u5e76\u7ef4\u62a4\u89c4\u8303\u7d22\u5f15\u3002",
+  "author": {
+    "name": "\u9ed1\u829d\u9ebb",
+    "email": "akazaakari950718@gmail.com"
+  },
+  "keywords": [
+    "craftime",
+    "figma",
+    "design-system"
+  ],
+  "skills": "./skills",
+  "mcpServers": "./.mcp.json"
+}
