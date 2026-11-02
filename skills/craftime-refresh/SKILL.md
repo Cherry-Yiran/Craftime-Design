@@ -5,6 +5,8 @@ description: 刷新 Craftime 规范索引或核对变化时，显示插件启用
 
 # 更新 Craftime 规范索引
 
+先读取 [跨 Agent 执行方式](../craftime-figma-ui/references/host-compatibility.md)。无面板/附件协议时，按其中的纯技能方式执行；下文仅适用于 Codex 的面板、附加状态与后续操作语法不在其他宿主强制执行。
+
 先读取并遵循 [规范使用反馈](../craftime-figma-ui/references/interaction.md)，显示“更新规范”启用提示。结束时报告读取覆盖范围与索引保存状态；设计引用和画板检查标为不适用。
 
 先读 [基础规则](../craftime-figma-ui/SKILL.md) 和 [上次索引](../craftime-figma-ui/references/design-system.json)。

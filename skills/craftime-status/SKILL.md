@@ -5,9 +5,11 @@ description: 用户询问是否启用了 Craftime 规范插件、有没有使用
 
 # 查看规范使用情况
 
+先读取 [跨 Agent 执行方式](../craftime-figma-ui/references/host-compatibility.md)。无面板/附件协议时，按其中的纯技能方式执行；下文仅适用于 Codex 的面板、附加状态与后续操作语法不在其他宿主强制执行。
+
 读取 [规范使用反馈](../craftime-figma-ui/references/interaction.md) 和当前执行来源的插件版本。只做状态查询，不自动设计、修复、刷新索引或创建 Figma 文件。
 
-若用户查询的是发送前的当前开启状态，先看当前宿主附加上下文的 `craftime.enabled`，遵循 [输入框规范开关](../craftime-figma-ui/references/composer.md)。当前上下文已关闭时不能引用历史启用提示回答“已开启”；没有当前附件证据时回答“未能确认”，可用 `craftime_open` 展示真实开关。插件安装、调用此查询技能不等于附件已开启。
+仅在支持附件的宿主中，若用户查询的是发送前的当前开启状态，先看当前宿主附加上下文的 `craftime.enabled`，遵循 [输入框规范开关](../craftime-figma-ui/references/composer.md)。当前上下文已关闭时不能引用历史启用提示回答“已开启”；没有当前附件证据时回答“未能确认”，可用 `craftime_open` 展示真实开关。插件安装、调用此查询技能不等于附件已开启。
 
 ## 区分查询和被查询任务
 
@@ -34,6 +36,8 @@ description: 用户询问是否启用了 Craftime 规范插件、有没有使用
 若没有相关任务记录，直接说明“没有足够执行证据，未能确认之前使用了规范插件”，不能用当前读取结果给旧设计颁发通过结论。
 
 需要重新检查时，提供 [规范检查](../craftime-review/SKILL.md) 的可点击后续操作；只有用户点击或明确要求后才实际检查：
+
+仅在支持该语法的 Codex 客户端输出下方按钮；其他 Agent 用文字说明“可请求重新检查设计”，不自动执行。
 
 - :codex-followup[重新检查设计]{prompt="使用 Craftime Design 的 $craftime-review，只读检查本聊天最近相关的 Figma 画板，先显示规范启用状态，再报告实时规范与目标引用的检查结果；目标不明确时先澄清。"}
 

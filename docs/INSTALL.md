@@ -1,12 +1,14 @@
 # 同事安装指南
 
-适用 Craftime Design v0.3.11，2026-11-02。
+适用 Craftime Design v0.4.0，2026-11-02。
+
+其他 Agent 请先看 [兼容矩阵](COMPATIBILITY.md)：Claude Code / Gemini可用原生入口，Cursor / Copilot / OpenCode等可用项目技能安装脚本。下面主要是 Codex 插件安装。
 
 ## 准备
 
 1. 使用支持 Plugins 的 Codex 桌面版，并安装可运行 `codex plugin` 的 CLI。
 2. 准备 Node.js 22 或更新版本，确保桌面应用启动的进程能找到 `node`。MCP 服务已包含依赖，无需 npm install。
-3. 获得私有仓库 `Cherry-Yiran/Craftime-Design` 的读取权限，并在本机完成 GitHub Git 身份验证。能在网页打开私有仓库，不代表本机 Git 已认证；可先用 `git ls-remote https://github.com/Cherry-Yiran/Craftime-Design.git HEAD` 检查。
+3. 仓库若为私有，先获得 `Cherry-Yiran/Craftime-Design` 的读取权限，并在本机完成 GitHub Git 身份验证；公开仓库可直接读取。能在网页打开私有仓库，不代表本机 Git 已认证；可先用 `git ls-remote https://github.com/Cherry-Yiran/Craftime-Design.git HEAD` 检查。
 4. 使用自己的 Figma 连接，取得 [规范组件库](https://www.figma.com/design/03EUC7nSmTdbnEjMOWAQ3U?node-id=2173-505) 和本次目标设计文件的访问权限。
 
 ## 从 GitHub 安装

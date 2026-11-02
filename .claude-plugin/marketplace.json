@@ -1,0 +1,13 @@
+{
+  "name": "craftime-design-team",
+  "owner": {
+    "name": "黑芝麻"
+  },
+  "plugins": [
+    {
+      "name": "craftime-design",
+      "source": "./",
+      "description": "Craftime 设计规范、Figma 评审与真实证据检查。"
+    }
+  ]
+}

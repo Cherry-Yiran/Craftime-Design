@@ -1,11 +1,13 @@
 ---
 name: craftime-setup
-description: 安装 Craftime Design 后打开规范开关面板，让用户在输入框确认当前聊天的开启状态，并只读验证 Figma 接入。
+description: 安装 Craftime Design 后检查宿主、技能与 Figma 接入；支持附件时打开规范开关，无附件时采用纯技能流程。
 ---
 
 # Craftime Design 接入检查
 
-先遵循 [输入框规范开关](../craftime-figma-ui/references/composer.md)。若 `craftime_open` 可用，打开面板，让用户通过开关把规范附到当前聊天输入框。不要用聊天中的绿色提示冒充已附加状态；新工具未加载时明确报告。随后按 [规范使用反馈](../craftime-figma-ui/references/interaction.md) 只读检查接入。
+先读取 [跨 Agent 执行方式](../craftime-figma-ui/references/host-compatibility.md)。无面板/附件协议时，按其中的纯技能方式执行；下文仅适用于 Codex 的面板、附加状态与后续操作语法不在其他宿主强制执行。
+
+先遵循 [输入框规范开关](../craftime-figma-ui/references/composer.md)。若宿主支持所需面板/附件协议且 `craftime_open` 可用，打开面板，让用户通过开关把规范附到当前聊天输入框。不要用聊天中的绿色提示冒充已附加状态；新工具未加载时明确报告。随后按 [规范使用反馈](../craftime-figma-ui/references/interaction.md) 只读检查接入。
 
 - 查看 Figma 工具是否可用，并只读获取 [Craftime 组件规范](https://www.figma.com/design/03EUC7nSmTdbnEjMOWAQ3U?node-id=2173-505) 的文件页面清单和文字样式。优先使用已连接工具；缺少连接时引导启用 Figma，继续说明插件用法。
 - 接入检查仅获取规范目录与样式定义，不遍历业务页面或自动寻找现成 UI；页面查找仅在用户明确要求时进行。做完整页面默认原样加入指定导航和顶部，来源见 craftime-figma-ui。

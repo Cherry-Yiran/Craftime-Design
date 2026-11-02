@@ -1,0 +1,17 @@
+{
+  "name": "craftime-design",
+  "version": "0.4.0",
+  "description": "Craftime 设计规范、Figma 评审与真实证据检查。",
+  "author": {
+    "email": "akazaakari950718@gmail.com",
+    "name": "黑芝麻"
+  },
+  "mcpServers": {
+    "craftime-design": {
+      "command": "node",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/server/index.mjs"
+      ]
+    }
+  }
+}

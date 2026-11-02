@@ -5,6 +5,8 @@ description: 检查 Craftime Figma 设计稿时，先显示规范启用状态，
 
 # 检查 Craftime 设计稿
 
+先读取 [跨 Agent 执行方式](../craftime-figma-ui/references/host-compatibility.md)。无面板/附件协议时，按其中的纯技能方式执行；下文仅适用于 Codex 的面板、附加状态与后续操作语法不在其他宿主强制执行。
+
 先读取并遵循 [规范使用反馈](../craftime-figma-ui/references/interaction.md)，显示“检查设计”启用提示。结束时展示带证据的检查状态，并提供查看使用情况与重新检查的入口。
 
 先读 [基础设计规则](../craftime-figma-ui/SKILL.md)，再按本次平台、语言和目标画板执行检查。评审默认只读；用户要求修复时，仅修改其授权范围。
