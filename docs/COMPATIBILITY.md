@@ -2,13 +2,13 @@
 
 Craftime Design v0.4.0，2026-11-02。设计规则只有一份，维护在 `skills/`；宿主差异由兼容说明和安装入口处理，不为每个 Agent 复制一套规范。
 
-普通使用先看 [Skill 安装与首次使用](INSTALL.md)。通常复制五个技能目录即可；以下插件、扩展和 MCP 配置为可选入口。
+普通使用先看 [Skill 安装指南](INSTALL.md)。通常复制五个技能目录即可；以下插件、扩展和 MCP 配置为可选入口。
 
 ## 支持入口
 
 | Agent | 安装方式 | 规则与检查 | 面板与 Figma |
 | --- | --- | --- | --- |
-| Codex | 原有团队 marketplace；或项目 `.agents/skills/` | 五个技能、检查脚本、stdio MCP | 原面板需宿主附件协议；Figma App 及文件权限独立 |
+| Codex | GitHub marketplace；或项目 `.agents/skills/` | 五个技能、检查脚本、stdio MCP | 原面板需宿主附件协议；Figma App 及文件权限独立 |
 | WorkBuddy / CodeBuddy | 手动复制到项目 `.codebuddy/skills/` | 同一套技能与引用；不需要新增适配层 | 打开对应项目并核对技能启用状态；Figma另行连接 |
 | Claude Code | `.claude-plugin/` 原生插件；或项目 `.claude/skills/` | 同一套技能；原生插件携带 MCP 配置 | 不依赖 Codex 开关；另配本环境 Figma 工具 |
 | Cursor | 项目 `.cursor/skills/` | 技能与脚本；可另配 stdio MCP | 不要求 Codex 附件；Figma 能力由本环境连接决定 |
@@ -23,7 +23,7 @@ Claude 桌面版/Cowork按其客户端的技能或插件导入功能使用；Cla
 
 ## 共用安装脚本
 
-在本仓库目录运行（`--target` 指同事的目标项目，需已存在）：
+在本仓库目录运行（`--target` 指目标项目目录，需已存在）：
 
 ```sh
 node scripts/install-agent.mjs --agent cursor --target "/path/to/design-project" --dry-run
