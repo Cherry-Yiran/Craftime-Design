@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "confirmedOn": "2026-10-15",
+  "source": "explicit-user-request",
+  "appliesTo": "new-and-authorized-replaced-icons",
+  "selection": {
+    "website": "https://www.mingcute.com/",
+    "officialRepository": "https://github.com/mingcute-design/mingcute-icons",
+    "regularFamily": "Core Regular",
+    "alternativeLibraryAllowedWithoutUserInstruction": false
+  },
+  "geometry": {
+    "nativeVector": true,
+    "editableCenterlinePaths": true,
+    "realVisibleStroke": true,
+    "filledOutlineIsAdjustableStroke": false,
+    "rasterAllowed": false,
+    "strokeWidthPx": 1.67,
+    "measureAfterFinalSize": true,
+    "strokeVariable": "icon/stroke-width",
+    "conversionPolicy": "preserve official silhouette, compare against source, report limitations when faithful conversion is unavailable"
+  },
+  "color": {
+    "default": "icon/default",
+    "disabled": "text/disabled",
+    "active": "existing-semantic-component-rule"
+  },
+  "scope": {
+    "massMigrateHistoricalPages": false,
+    "modifySharedMastersWithoutAuthorization": false,
+    "protectedChrome": "preserve",
+    "explicitUserAssets": "record-exception"
+  },
+  "requiredEvidence": [
+    "officialSourceUrl",
+    "officialIconName",
+    "sourceRevisionOrVersion",
+    "sourceSha256",
+    "nativeVectorReadback",
+    "actualVisibleStrokeWidthAtFinalSize",
+    "strokeVariableBinding",
+    "actualSizeScreenshot"
+  ]
+}
+

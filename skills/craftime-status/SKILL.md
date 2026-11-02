@@ -36,3 +36,4 @@ description: 用户询问是否启用了 Craftime 规范插件、有没有使用
 需要重新检查时，提供 [规范检查](../craftime-review/SKILL.md) 的可点击后续操作；只有用户点击或明确要求后才实际检查：
 
 - :codex-followup[重新检查设计]{prompt="使用 Craftime Design 的 $craftime-review，只读检查本聊天最近相关的 Figma 画板，先显示规范启用状态，再报告实时规范与目标引用的检查结果；目标不明确时先澄清。"}
+

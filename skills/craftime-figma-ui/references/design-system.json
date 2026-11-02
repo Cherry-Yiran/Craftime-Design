@@ -1097,5 +1097,165 @@
       "componentSets": [],
       "standalone": []
     }
-  ]
+  ],
+  "latestIconRule": {
+    "confirmedOn": "2026-10-15",
+    "fileKey": "03EUC7nSmTdbnEjMOWAQ3U",
+    "nodeId": "2540:2",
+    "reference": "icons.md",
+    "machineRule": "icon-rules.json",
+    "website": "https://www.mingcute.com/",
+    "strokeWidthPx": 1.67,
+    "editableNativeStroke": true,
+    "historicalInventoryUnchanged": true,
+    "strokeVariableId": "VariableID:2970:2",
+    "formalTextSync": "pending: tool cannot load the original PingFang SC font; confirmed user rule overrides historical Phosphor wording"
+  },
+  "latestFieldBackgroundRule": {
+    "confirmedOn": "2026-10-15",
+    "semantic": "field/background",
+    "hex": "#F6F6F6",
+    "opacity": 1,
+    "variableId": "VariableID:2025:23",
+    "primitive": "背景/F6F6F6",
+    "primitiveVariableId": "VariableID:2962:64",
+    "note": "Shared neutral primitive confirmed 2026-10-15; independent field semantic preserved."
+  },
+  "latestSurfaceRule": {
+    "confirmedOn": "2026-10-15",
+    "status": "confirmed",
+    "fileKey": "03EUC7nSmTdbnEjMOWAQ3U",
+    "nodeId": "1991:171",
+    "reference": "color-semantics.md",
+    "machineRule": "color-semantics.json",
+    "neutralHex": "#F6F6F6",
+    "contentHex": "#FFFFFF",
+    "opacity": 1,
+    "deprecatedShallowColors": [
+      "#F3F6F8",
+      "#F0F3F7",
+      "#F8F8F8"
+    ],
+    "deprecatedSemantic": [
+      "surface/subtle"
+    ],
+    "variables": {
+      "page": "VariableID:1982:1182",
+      "field": "VariableID:2025:23",
+      "readOnly": "VariableID:2025:24",
+      "hover": "VariableID:2989:21",
+      "selected": "VariableID:2989:22"
+    },
+    "historicalInventoryUnchanged": true,
+    "businessPagesMigrated": false,
+    "teamLibraryPublished": false
+  },
+  "authorityRouting": {
+    "updatedOn": "2026-10-15",
+    "foundations": {
+      "fileKey": "03EUC7nSmTdbnEjMOWAQ3U",
+      "directoryNodeId": "2173:505",
+      "colorsNodeId": "1991:4",
+      "typographyNodeId": "1991:296",
+      "iconsNodeId": "2540:2",
+      "url": "https://www.figma.com/design/03EUC7nSmTdbnEjMOWAQ3U?node-id=2173-505",
+      "usage": "Read relevant formal definitions; latest explicit user decisions override stale formal text."
+    },
+    "businessReference": {
+      "fileKey": "h2Yu0Mg9J23KCatfp4uBgh",
+      "usage": "Only search business screens when explicitly requested, except the user-confirmed same-module Mobile reference lookup for mobile work (2026-10-27). No unrelated business or Web lookup. Historical candidates are not universal standards."
+    },
+    "fixedChrome": {
+      "fileKey": "RFpf6Kksqu6SFsnjxjIn5l",
+      "frameNodeId": "1336:144831",
+      "navigationNodeId": "1336:145424",
+      "headerNodeId": "1336:144845",
+      "usage": "Exact native reuse and protection; no unrelated source changes."
+    },
+    "freshness": {
+      "historicalInventoryCapturedOn": "2026-10-11",
+      "historicalCoverageScope": "source.fileKey only; not an audit of the foundation library",
+      "latestRuleDates": "Read latestSurfaceRule/latestIconRule separately; index is not a live Figma read."
+    }
+  },
+  "latestLinkTextRule": {
+    "hex": "#018AE4",
+    "nodeOpacity": 1,
+    "paintOpacity": 1,
+    "variableNames": [],
+    "allowUnbound": true,
+    "bindingStatus": "confirmed source paint; no formal Figma link variable was observed",
+    "confirmedOn": "2026-10-27",
+    "platforms": [
+      "Web",
+      "App",
+      "H5"
+    ],
+    "source": {
+      "fileKey": "h2Yu0Mg9J23KCatfp4uBgh",
+      "nodeId": "458:2059",
+      "kind": "existing product link action paint, explicitly confirmed by user",
+      "readOn": "2026-10-27"
+    },
+    "notInterchangeableWith": [
+      "color/blue/text",
+      "feedback/info/text"
+    ],
+    "preserve": [
+      "link text",
+      "hyperlink destination",
+      "underline and existing states",
+      "mention color outside URLs"
+    ],
+    "status": "user-confirmed; existing source paint; no full-library refresh",
+    "checkerRole": "linkText"
+  },
+  "latestSeparatorRule": {
+    "confirmedOn": "2026-11-02",
+    "hex": "#F2F2F2",
+    "opacity": 1,
+    "defaultThickness": 1,
+    "role": "separator/default",
+    "targetLocalVariableId": "VariableID:6663:2290",
+    "source": "explicit user correction on notification page 6535:309330",
+    "preserve": [
+      "primitive 中性/50 = #E7E7E8",
+      "skeleton and disabled colors",
+      "historical pages outside authorized scope",
+      "protected navigation and header"
+    ],
+    "foundationSourceModified": false,
+    "published": false
+  },
+  "latestNotificationRule": {
+    "confirmedOn": "2026-11-02",
+    "unreadHex": "#FF2442",
+    "badgeTextHex": "#FFFFFF",
+    "sourceFileKey": "RFpf6Kksqu6SFsnjxjIn5l",
+    "sourceNodeIds": [
+      "261:54084",
+      "4106:1471",
+      "4106:1472"
+    ],
+    "targetNodeId": "6535:309330",
+    "targetLocalVariableId": "VariableID:6663:2291",
+    "visualAuthority": "latest specified product page and confirmed tokens; Demo is structural/interaction evidence only",
+    "allProductSelectionColorsChanged": false,
+    "foundationSourceModified": false,
+    "published": false
+  },
+  "designDecisionRules": {
+    "confirmedOn": "2026-11-02",
+    "reference": "design-decisions.md",
+    "topics": [
+      "mobile-independent-design",
+      "simplicity-and-information-density",
+      "icon-semantic-distinction",
+      "delivery-scope-and-final-state-sync"
+    ],
+    "sameModuleMobileExceptionConfirmedOn": "2026-10-27",
+    "contextualReviewRequired": true,
+    "machineCheckerDoesNotVerifyVisualSemantics": true,
+    "localMeasurementsAreNotGlobalStandards": true
+  }
 }

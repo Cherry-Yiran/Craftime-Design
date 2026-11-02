@@ -1,0 +1,24 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {checkColorSemantics} from '../skills/craftime-figma-ui/scripts/check-color-semantics.mjs';
+const link=()=>({id:'fixture:link',role:'linkText',hex:'#018AE4',nodeOpacity:1,paintOpacity:1,variableNames:[]});
+test('confirmed existing link Paint passes without a fabricated variable',()=>assert.equal(checkColorSemantics([link()]).status,'通过'));
+test('information blue cannot replace link blue',()=>{const r={...link(),hex:'#4859BD',variableNames:['color/blue/text']};const result=checkColorSemantics([r]);assert.equal(result.status,'有偏差');assert.ok(result.issues[0].problems.some(p=>p.property==='hex'));assert.ok(result.issues[0].problems.some(p=>p.property==='variableNames'));});
+test('matching hex cannot excuse an unrelated semantic binding',()=>assert.equal(checkColorSemantics([{...link(),variableNames:['feedback/info/text']}]).status,'有偏差'));
+test('missing binding evidence stays pending for links',()=>{const r=link();delete r.variableNames;assert.equal(checkColorSemantics([r]).status,'待验证');});
+test('link Paint must be fully opaque',()=>assert.equal(checkColorSemantics([{...link(),paintOpacity:.6}]).status,'有偏差'));
+test('link node must be fully opaque',()=>assert.equal(checkColorSemantics([{...link(),nodeOpacity:.6}]).status,'有偏差'));
+test('binding exception does not relax separators',()=>assert.equal(checkColorSemantics([{id:'fixture:separator',role:'separator',hex:'#F2F2F2',nodeOpacity:1,paintOpacity:1,thickness:1,variableNames:[]}]).status,'待验证'));
+test('existing separator contract still passes',()=>assert.equal(checkColorSemantics([{id:'fixture:separator',role:'separator',hex:'#F2F2F2',nodeOpacity:1,paintOpacity:1,thickness:1,variableNames:['separator/default']}]).status,'通过'));
+test('unknown color role remains pending',()=>assert.equal(checkColorSemantics([{...link(),role:'inventedLink'}]).status,'待验证'));
+
+const separator=()=>({id:'fixture:separator-current',role:'separator',hex:'#F2F2F2',nodeOpacity:1,paintOpacity:1,thickness:1,variableNames:['separator/default']});
+const unread=()=>({id:'fixture:unread',role:'notificationUnread',hex:'#FF2442',nodeOpacity:1,paintOpacity:1,variableNames:['notification/unread']});
+test('old separator gray fails even with a binding',()=>assert.equal(checkColorSemantics([{...separator(),hex:'#E7E7E8'}]).status,'有偏差'));
+test('neutral primitive is not relabeled as the new separator',()=>assert.equal(checkColorSemantics([{...separator(),variableNames:['中性/50']}]).status,'有偏差'));
+test('opacity cannot simulate the new separator color',()=>assert.equal(checkColorSemantics([{...separator(),paintOpacity:0.5}]).status,'有偏差'));
+test('confirmed notification red passes',()=>assert.equal(checkColorSemantics([unread()]).status,'通过'));
+test('original unbound notification Paint remains accepted',()=>assert.equal(checkColorSemantics([{...unread(),variableNames:[]}]).status,'通过'));
+test('demo orange fails for unread messages',()=>assert.equal(checkColorSemantics([{...unread(),hex:'#FF6C00',variableNames:['selection/text']}]).status,'有偏差'));
+test('red with unrelated selection binding fails',()=>assert.equal(checkColorSemantics([{...unread(),variableNames:['selection/text']}]).status,'有偏差'));
+test('badge text uses white inverse text',()=>assert.equal(checkColorSemantics([{id:'fixture:badge-text',role:'notificationBadgeText',hex:'#FFFFFF',nodeOpacity:1,paintOpacity:1,variableNames:['text/inverse']}]).status,'通过'));

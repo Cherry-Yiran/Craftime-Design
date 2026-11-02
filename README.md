@@ -2,65 +2,59 @@
 
 <img src="assets/craftime-logo.svg" width="64" height="64" alt="Craftime Design">
 
-按 Craftime UI 规范设计、检查 Figma 页面，并维护规范索引。当前版本 **0.3.1**。
+按 Craftime 实时规范设计、检查 Figma 页面。当前版本 **0.3.11**（2026-11-02），包含五个技能、规范开关面板与本地 stdio MCP 服务。
 
-## 使用
+## 同事安装
 
-在 Codex 桌面版安装 [Craftime Design](https://chatgpt.com/plugins/plugins_6acb236925448191aa2fddc2281b43b1)，连接自己的 Figma 账号并取得目标文件权限。插件使用本地 MCP 服务，需要 Node.js 22 或更高版本。
+本仓库为私有仓库，使用前请让维护者授予 GitHub 读取权限。安装说明见 [同事安装指南](docs/INSTALL.md)。
 
-打开插件的规范开关面板，把工作流附到当前聊天输入框，再描述页面需求。规范来源为 [Craftime UI](https://www.figma.com/design/h2Yu0Mg9J23KCatfp4uBgh/Craftime-UI)。安装插件不会自动授予 Figma 文件权限，打开面板也不会修改 Figma。
+已安装支持 Plugins 的 Codex 桌面版、Codex CLI 和 Node.js 22+ 后，在能够读取本仓库的电脑终端执行：
 
-示例：
+```sh
+codex plugin marketplace add Cherry-Yiran/Craftime-Design --ref main
+codex plugin add craftime-design@craftime-design-team
+```
 
-- 使用 Craftime Design，按规范在指定 Figma 文件里设计页面。
-- 使用 Craftime Design，检查这个 Figma 画板是否符合规范。
-- 使用 Craftime Design，读取最新规范并报告资产索引的变化。
+重新打开桌面应用，选用 Craftime Design。每位同事须连接自己的 Figma 账号，并具有规范文件和目标文件权限。插件不包含登录凭据，也不会授予文件权限。无需 npm install。
 
-## 内容
+本仓库提供团队 Git marketplace 分发；维护者个人账号里的私有插件链接不作为同事的安装前提。桌面安装功能及组织允许的来源，以接收者当前客户端与组织策略为准。
+
+## 开始使用
+
+输入「使用 Craftime Design，检查启用状态并打开规范面板」，在当前聊天开启规范工作流后再描述任务，例如：
+
+- 按规范在指定 Figma 文件里设计页面。
+- 检查这个 Figma 画板是否符合规范。
+- 读取最新规范并报告资产索引的变化。
+
+开关附件只表示本聊天采用工作流，不表示已实时读取 Figma 或页面已验收。基础规范来源为 [Craftime 组件库](https://www.figma.com/design/03EUC7nSmTdbnEjMOWAQ3U?node-id=2173-505)，业务参考仅在获准范围读取。
+
+## 本版内容
+
+- 移动端独立设计：读取同模块移动稿与移动端规范，再组织窄屏与触屏布局。
+- 简洁与信息密度：减少无用途分隔和重复辅助信息，保留必要内容。
+- 图标语义避撞：检查关联动作的含义与轮廓，保留 MingCute 与原生描边规则。
+- 交付范围与定稿同步：按一屏、流程或全部状态交付，以用户最新定稿为准。
+- 保留现有颜色语义、链接色、固定导航与顶部保护、字体及来源规则。
+
+## 开发与验证
+
+```sh
+node scripts/build-panel.mjs
+node --test tests/*.test.mjs
+node tests/mcp-integration.mjs
+```
 
 | 路径 | 用途 |
 | --- | --- |
-| `plugin.json` | 标准插件清单 |
-| `.codex-plugin/plugin.json` | Codex 兼容清单 |
-| `mcp.json` / `.mcp.json` | 本地 MCP 服务配置 |
-| `.app.json` | Figma 连接依赖 |
-| `server/index.mjs` | 已打包的 MCP 服务入口 |
-| `assets/craftime-panel.html` | 已打包的规范开关面板 |
-| `assets/craftime-logo.svg` | 橙色四瓣图标 |
-| `skills/` | 页面设计、规范检查、刷新、接入和状态查询五个技能 |
+| `plugin.json` / `.codex-plugin/plugin.json` | 标准与兼容清单 |
+| `mcp.json` / `.mcp.json` / `.app.json` | 本地 MCP 与 Figma App 依赖 |
+| `.agents/plugins/marketplace.json` | 团队安装目录，插件来源为仓库根目录 |
+| `server/index.mjs` / `assets/craftime-panel.html` | 已打包服务与规范面板 |
+| `ui/` / `scripts/` / `tests/` | 面板源、构建与测试 |
+| `skills/` | 五个技能、规则参考与读回检查 |
+| `docs/INSTALL.md` | 安装、更新与常见问题 |
 
-服务和面板已包含发布版本的打包代码，不需要执行 npm install。本仓库保存发布包完整源码；当前发布包未包含打包前的开发工程。
+v0.3.11 的 44 项测试和 9 项本地 stdio MCP 集成检查已通过；这不代表接收者电脑安装、真实输入框、宿主重载或 Figma 页面已验收。控制器测试使用模拟宿主；读回检查只核对提交的证据，不自动读取 Figma。
 
-## 本地检查与打包
-
-```sh
-node --check server/index.mjs
-node server/index.mjs
-```
-
-第二条命令启动 stdio MCP 服务，供支持 MCP 的宿主连接。单独启动服务不代表 Figma 已连接或面板已通过宿主验收。
-
-使用本地插件时，通过目标宿主支持的安装流程选择此目录。修改后在宿主中重新安装或刷新插件，不要直接改安装缓存。
-
-制作只包含插件文件的 ZIP（在仓库根目录执行）：
-
-```sh
-python3 - <<'PY'
-from pathlib import Path
-from zipfile import ZipFile, ZIP_DEFLATED
-root = Path('.')
-with ZipFile('../craftime-design-0.3.1.zip', 'w', ZIP_DEFLATED) as archive:
-    for name in ('plugin.json', 'mcp.json', '.mcp.json', '.app.json'):
-        archive.write(name, f'craftime-design/{name}')
-    for directory in ('.codex-plugin', 'assets', 'server', 'skills'):
-        for path in sorted((root / directory).rglob('*')):
-            if path.is_file():
-                archive.write(path, f'craftime-design/{path.as_posix()}')
-PY
-```
-
-GitHub 保存与账号插件发布是两个步骤。推送本仓库不会自动更新账号中的插件，后续发布需采用插件宿主支持的更新流程。
-
-## 第三方依赖
-
-打包代码的第三方许可见 [THIRD-PARTY-NOTICES.md](assets/THIRD-PARTY-NOTICES.md)。本次源码备份未新增开源许可证。
+维护源码目录后重建面板，通过宿主支持的更新流程刷新；不要直接编辑安装缓存。推送本仓库不会自动更新维护者的账号插件。第三方许可见 [THIRD-PARTY-NOTICES.md](assets/THIRD-PARTY-NOTICES.md)；未新增开源许可证。

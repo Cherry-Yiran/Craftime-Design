@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "confirmedOn": "2026-11-02",
+  "status": "confirmed roles; verify live definitions before use",
+  "roles": {
+    "separator": {
+      "hex": "#F2F2F2",
+      "variableNames": [
+        "separator/default"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1,
+      "thickness": 1,
+      "source": {
+        "kind": "user explicit correction",
+        "confirmedOn": "2026-11-02",
+        "targetFileKey": "RFpf6Kksqu6SFsnjxjIn5l",
+        "targetNodeId": "6535:309330",
+        "targetLocalVariableId": "VariableID:6663:2290",
+        "foundationPublished": false
+      }
+    },
+    "decorativeBorder": {
+      "hex": "#CECFD0",
+      "variableNames": [
+        "border/subtle"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1
+    },
+    "decorativeBorderHover": {
+      "hex": "#B6B7B8",
+      "variableNames": [
+        "border/hover"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1
+    },
+    "controlBorder": {
+      "hex": "#86888A",
+      "variableNames": [
+        "border/control"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1
+    },
+    "pageSurface": {
+      "hex": "#F6F6F6",
+      "variableNames": [
+        "surface/page"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1
+    },
+    "contentSurface": {
+      "hex": "#FFFFFF",
+      "variableNames": [
+        "surface/raised"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1
+    },
+    "fieldBackground": {
+      "hex": "#F6F6F6",
+      "variableNames": [
+        "field/background"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1
+    },
+    "readOnlyField": {
+      "hex": "#F6F6F6",
+      "variableNames": [
+        "field/read-only"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1
+    },
+    "menuHover": {
+      "hex": "#F6F6F6",
+      "variableNames": [
+        "surface/hover"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1
+    },
+    "menuSelected": {
+      "hex": "#F6F6F6",
+      "variableNames": [
+        "surface/selected"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1
+    },
+    "linkText": {
+      "hex": "#018AE4",
+      "nodeOpacity": 1,
+      "paintOpacity": 1,
+      "variableNames": [],
+      "allowUnbound": true,
+      "bindingStatus": "confirmed source paint; no formal Figma link variable was observed",
+      "confirmedOn": "2026-10-27",
+      "platforms": [
+        "Web",
+        "App",
+        "H5"
+      ],
+      "source": {
+        "fileKey": "h2Yu0Mg9J23KCatfp4uBgh",
+        "nodeId": "458:2059",
+        "kind": "existing product link action paint, explicitly confirmed by user",
+        "readOn": "2026-10-27"
+      },
+      "notInterchangeableWith": [
+        "color/blue/text",
+        "feedback/info/text"
+      ],
+      "preserve": [
+        "link text",
+        "hyperlink destination",
+        "underline and existing states",
+        "mention color outside URLs"
+      ]
+    },
+    "separatorMarker": {
+      "hex": "#F2F2F2",
+      "variableNames": [
+        "separator/default"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1,
+      "scope": "existing quote markers; preserve geometry, do not infer a global thickness"
+    },
+    "notificationUnread": {
+      "hex": "#FF2442",
+      "variableNames": [
+        "notification/unread"
+      ],
+      "allowUnbound": true,
+      "nodeOpacity": 1,
+      "paintOpacity": 1,
+      "confirmedOn": "2026-11-02",
+      "source": {
+        "fileKey": "RFpf6Kksqu6SFsnjxjIn5l",
+        "nodeIds": [
+          "261:54084",
+          "4106:1471",
+          "4106:1472"
+        ],
+        "kind": "existing product unread badge and dots, read and user confirmed"
+      },
+      "notInterchangeableWith": [
+        "selection/text",
+        "selection/background",
+        "action/default"
+      ],
+      "bindingStatus": "confirmed source Paint; notification/unread currently local to the authorized target, not a published foundation claim"
+    },
+    "notificationBadgeText": {
+      "hex": "#FFFFFF",
+      "variableNames": [
+        "text/inverse"
+      ],
+      "nodeOpacity": 1,
+      "paintOpacity": 1,
+      "confirmedOn": "2026-11-02"
+    }
+  },
+  "surfaceMigration": {
+    "deprecatedShallowColors": [
+      "#F3F6F8",
+      "#F0F3F7",
+      "#F8F8F8"
+    ],
+    "deprecatedSemantic": [
+      "surface/subtle"
+    ],
+    "grouping": "spacing, headings and separators",
+    "statusFilter": "unfilled; hover border only",
+    "searchHover": "preserve existing white",
+    "disabledAndSkeleton": "preserve #E7E7E8; read-only separated",
+    "businessPagesMigrated": false
+  },
+  "latestPartialUpdate": {
+    "date": "2026-11-02",
+    "scope": "separators and notification unread colors; skeleton, disabled, brand, link and protected regions unchanged"
+  }
+}

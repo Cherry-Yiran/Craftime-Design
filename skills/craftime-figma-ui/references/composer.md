@@ -1,6 +1,6 @@
 # 输入框规范开关
 
-0.3.0 提供自己的 MCP App。通过 `craftime_open` 打开“Craftime · 规范开关”；用户开启后，App 调用宿主的 `ui/update-model-context`，附上完整设计工作流、规范源、版本与当前聊天的开启状态。可见标题为“Craftime 规范 · 已开启”。
+插件提供自己的 MCP App。通过 `craftime_open` 打开“Craftime · 规范开关”；用户开启后，App 调用宿主的 `ui/update-model-context`，附上完整设计工作流、规范源、版本与当前聊天的开启状态。可见标题为“Craftime 规范 · 已开启”。
 
 - 输入框附件表示当前聊天默认采用该工作流；用户接下来直接输入页面需求即可。它不代表已读取实时 Figma、资产绑定已验证或画板合规。
 - 同一 App 实例的更新替换此前上下文。App 重新挂载时，从宿主返回的 `openai/modelContext` 恢复，而不使用本地存储伪造开启状态。
@@ -14,3 +14,8 @@
 插件流程不能绕过用户意图，也不能强制保证 agent 合规；完成页面后仍需检查节点、绑定与截图。
 
 依据：[OpenAI MCP Extensions：模型上下文](https://github.com/openai/mcp-extensions/blob/main/docs/spec.md#uiupdate-model-context-extensions)。
+
+
+0.3.7：面板版本读取 `craftime_get_rules` 的实际服务端版本，不硬编码展示版本号。附件版本落后时显示两者并提示重新开启；读取失败显示“版本未确认”。关闭操作不依赖重新读取规则；规则读取中移除附件会取消旧的开启请求。无宿主确认不显示开启成功。
+
+验证边界：stdio MCP 集成测试验证服务端工具与资源，控制器回归验证模拟宿主协议行为；两者均不等于真实 Codex 输入框、跨聊天及重新挂载已验收。必须有真实宿主的回调与界面证据才可宣称后者通过。
