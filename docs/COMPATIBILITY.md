@@ -2,17 +2,22 @@
 
 Craftime Design v0.4.0，2026-11-02。设计规则只有一份，维护在 `skills/`；宿主差异由兼容说明和安装入口处理，不为每个 Agent 复制一套规范。
 
+普通使用先看 [Skill 安装与首次使用](INSTALL.md)。通常复制五个技能目录即可；以下插件、扩展和 MCP 配置为可选入口。
+
 ## 支持入口
 
 | Agent | 安装方式 | 规则与检查 | 面板与 Figma |
 | --- | --- | --- | --- |
 | Codex | 原有团队 marketplace；或项目 `.agents/skills/` | 五个技能、检查脚本、stdio MCP | 原面板需宿主附件协议；Figma App 及文件权限独立 |
+| WorkBuddy / CodeBuddy | 手动复制到项目 `.codebuddy/skills/` | 同一套技能与引用；不需要新增适配层 | 打开对应项目并核对技能启用状态；Figma另行连接 |
 | Claude Code | `.claude-plugin/` 原生插件；或项目 `.claude/skills/` | 同一套技能；原生插件携带 MCP 配置 | 不依赖 Codex 开关；另配本环境 Figma 工具 |
 | Cursor | 项目 `.cursor/skills/` | 技能与脚本；可另配 stdio MCP | 不要求 Codex 附件；Figma 能力由本环境连接决定 |
 | Gemini CLI | `gemini-extension.json` 扩展；或项目 `.gemini/skills/` | 同一套技能；扩展携带 MCP 配置 | 无面板时以文字确认本次采用；另配 Figma |
 | GitHub Copilot | 项目 `.github/skills/` | 技能与脚本；MCP 按实际 Copilot 产品配置 | 云端/本地权限及工具可用性分别核实 |
 | OpenCode | 项目 `.opencode/skills/` | 技能与脚本；可另配 stdio MCP | 不依赖 Codex UI；另配 Figma |
 | 其他支持 Markdown/Agent Skills 的工具 | `generic` 安装到 `.agents/skills/`，或读取根 `CRAFTIME.md` | 按工具实际文件、shell 能力执行 | 不保证自动发现或 Figma 写入，不虚构连接 |
+
+Claude 桌面版/Cowork按其客户端的技能或插件导入功能使用；Claude Code 的 CLI 和目录步骤不自动适用于它们。DeepSeek 是模型选择，按实际承载它的 Agent 安装；不将独立聊天网页视为已有本地 Skill/MCP 能力。
 
 “支持入口”指已按各宿主文档提供文件格式，不表示这些客户端已逐一安装验收，也不表示网页聊天框只上传一个文件就能获得 MCP 或 Figma 编辑能力。
 
@@ -25,7 +30,7 @@ node scripts/install-agent.mjs --agent cursor --target "/path/to/design-project"
 node scripts/install-agent.mjs --agent cursor --target "/path/to/design-project"
 ```
 
-将 `cursor` 换成 `codex`、`claude`、`gemini`、`copilot`、`opencode` 或 `generic`。脚本适用于有 Node.js 22+ 的 macOS、Linux、Windows，不依赖 Bash；Windows 可传 `C:\Work\DesignProject`。
+将 `cursor` 换成 `codex`、`claude`、`gemini`、`copilot`、`opencode` 或 `generic`。WorkBuddy使用前述手动目录步骤；脚本没有workbuddy/deepseek参数。脚本使用Node.js文件API，不依赖Bash；Windows路径可写为 `C:\Work\DesignProject`，实际平台验证范围见下文。
 
 - 一次安装五个技能及其引用、脚本、版本记录；不要只复制 SKILL.md。
 - 只写目标项目的相应技能目录，不更改已有 AGENTS.md、CLAUDE.md、GEMINI.md，不改宿主设置、账号或 MCP 配置，也不安装到全局目录。
@@ -81,6 +86,8 @@ v0.4.0 已通过51项测试与9项本地 stdio MCP 集成检查。新增测试�
 这些检查不调用或模拟安装 Claude Code、Cursor、Gemini、Copilot、OpenCode 客户端。各客户端真实技能触发、宿主UI、Windows/Linux实际运行、Figma认证与写回仍待对应环境验证；后续真实使用发现差异时按具体客户端修正，不宣称所有 Agent 全功能一致。
 
 ## 格式依据
+
+- [WorkBuddy 项目技能目录](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/Project)
 
 - [Claude 插件清单与 MCP 路径](https://code.claude.com/docs/en/plugins-reference)、[插件市场](https://code.claude.com/docs/en/plugin-marketplaces)
 - [Cursor Skills](https://cursor.com/help/customization/skills)、[Cursor MCP](https://cursor.com/docs/mcp)
