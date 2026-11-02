@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
+import { checkTypographyRecords } from './check-typography.mjs';
 
 const present = value => typeof value === 'string' && !!value.trim();
 const equal = (a, b) => JSON.stringify(canonical(a)) === JSON.stringify(canonical(b));
@@ -54,6 +55,9 @@ export function checkDesignReadback(input) {
       evidence(item);
       const actual = item.actual ?? {}, expected = item.expected ?? {};
       if (category === 'texts') {
+        const semantic = checkTypographyRecords([item]);
+        issues.push(...semantic.issues);
+        pending.push(...semantic.pending);
         definition(item);
         compare(id, 'type', actual.type, 'TEXT');
         if (!present(expected.role)) missing(id, 'expected.role');

@@ -1,6 +1,6 @@
 # 安装指南
 
-适用 Craftime Design **v0.4.0**。通常选择下面的“作为 Skill 使用”即可。插件面板与 MCP 的接入方式见 [进阶兼容说明](COMPATIBILITY.md)。
+适用 Craftime Design **v0.4.2**。通常选择下面的“作为 Skill 使用”即可。插件面板与 MCP 的接入方式见 [进阶兼容说明](COMPATIBILITY.md)。
 
 ## 作为 Skill 使用
 

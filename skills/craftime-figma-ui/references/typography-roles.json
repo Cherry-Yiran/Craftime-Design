@@ -1,0 +1,329 @@
+{
+  "schemaVersion": 1,
+  "confirmedOn": "2026-11-02",
+  "scope": {
+    "platforms": [
+      "web"
+    ],
+    "migration": "current",
+    "historicalMigrationAutomatic": false,
+    "foundationModified": false
+  },
+  "font": {
+    "latin": "Open Sans",
+    "cjk": "device system concrete font; do not claim Chinese glyphs are Open Sans",
+    "forbidWeightsBelow": 400
+  },
+  "roles": {
+    "pageTitle": {
+      "kind": "heading",
+      "defaultWeight": 700,
+      "allowedWeights": [
+        700
+      ]
+    },
+    "sectionTitle": {
+      "kind": "heading",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "dialogTitle": {
+      "kind": "heading",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "navigation": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "category": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "tab": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "filter": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "fieldLabel": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "primaryButton": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "secondaryButton": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "textButton": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "inlineAction": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "counter": {
+      "kind": "control",
+      "defaultWeight": 600,
+      "allowedWeights": [
+        600,
+        700
+      ]
+    },
+    "nickname": {
+      "kind": "content",
+      "defaultWeight": 400,
+      "allowedWeights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "contentBody": {
+      "kind": "content",
+      "defaultWeight": 400,
+      "allowedWeights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "commentBody": {
+      "kind": "content",
+      "defaultWeight": 400,
+      "allowedWeights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "quote": {
+      "kind": "content",
+      "defaultWeight": 400,
+      "allowedWeights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "smallTag": {
+      "kind": "content",
+      "defaultWeight": 400,
+      "allowedWeights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "inputValue": {
+      "kind": "content",
+      "defaultWeight": 400,
+      "allowedWeights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "placeholder": {
+      "kind": "content",
+      "defaultWeight": 400,
+      "allowedWeights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "helperText": {
+      "kind": "content",
+      "defaultWeight": 400,
+      "allowedWeights": [
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "secondaryMetadata": {
+      "kind": "metadata",
+      "defaultWeight": 400,
+      "allowedWeights": [
+        400,
+        500,
+        600
+      ]
+    }
+  },
+  "stateRule": "Current Web control roles keep weight >=600 in selected, unselected, hover and disabled states; use existing color/background/indicator states instead of making text thin.",
+  "preserve": [
+    "user's latest manual edits",
+    "existing font sizes and line heights unless separately authorized",
+    "historical SF Pro and mobile sources",
+    "confirmed compact Meetup Cancel/Recap Regular exception",
+    "protected header and navigation"
+  ],
+  "reference": {
+    "requestedUrl": "https://makerworld.com/en/models/3505604-gingerbread-man-christmas-paper-towel-holder#profileId-4005155",
+    "observedUrl": "https://makerworld.com/zh/models/3505604-gingerbread-man-christmas-paper-towel-holder#profileId-4005155",
+    "readOn": "2026-11-02",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "method": "Read-only computed CSS from visible rendered DOM and screenshot. English URL redirected to Chinese; Open Sans declared stack does not prove Chinese glyphs use Open Sans.",
+    "observedSamples": [
+      {
+        "role": "sidebar navigation",
+        "text": "MakerLab",
+        "size": 14,
+        "lineHeight": 20,
+        "weight": 600
+      },
+      {
+        "role": "login button",
+        "size": 14,
+        "lineHeight": 30,
+        "weight": 600
+      },
+      {
+        "role": "model title",
+        "size": 18,
+        "lineHeight": 24,
+        "weight": 700
+      },
+      {
+        "role": "author nickname",
+        "text": "Jades Print House",
+        "size": 14,
+        "lineHeight": 20,
+        "weight": 400
+      },
+      {
+        "role": "follow button",
+        "size": 12,
+        "lineHeight": 16,
+        "weight": 600
+      },
+      {
+        "role": "selected detail tab",
+        "size": 14,
+        "lineHeight": 20,
+        "weight": 600
+      },
+      {
+        "role": "unselected detail tab",
+        "size": 14,
+        "lineHeight": 20,
+        "weight": 400
+      },
+      {
+        "role": "section title",
+        "size": 16,
+        "lineHeight": 24,
+        "weight": 700
+      },
+      {
+        "role": "sort buttons",
+        "size": 14,
+        "lineHeight": 36,
+        "weight": 600
+      },
+      {
+        "role": "content tag",
+        "size": 14,
+        "lineHeight": 24,
+        "weight": 400
+      },
+      {
+        "role": "post and comment body",
+        "size": 14,
+        "lineHeight": 20,
+        "weight": 400
+      },
+      {
+        "role": "timestamp",
+        "size": 14,
+        "lineHeight": 22,
+        "weight": 400
+      },
+      {
+        "role": "reply action",
+        "size": 14,
+        "lineHeight": 14,
+        "weight": 500
+      },
+      {
+        "role": "engagement metric",
+        "size": 16,
+        "lineHeight": 24,
+        "weight": 500
+      },
+      {
+        "role": "primary download action",
+        "size": 16,
+        "lineHeight": 24,
+        "weight": 700
+      }
+    ],
+    "notAdoptedVerbatim": [
+      "MakerWorld unselected tab weight 400",
+      "MakerWorld reply and metric weight 500",
+      "MakerWorld exact font sizes and line heights"
+    ],
+    "adoption": "User's request gives Craftime functional roles a stronger default of600. Reference measurements are evidence, not a direct replacement of Craftime specifications."
+  }
+}

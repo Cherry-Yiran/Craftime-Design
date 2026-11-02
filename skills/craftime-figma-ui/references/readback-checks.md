@@ -19,6 +19,7 @@ MCP 工具 `craftime_check_design({readback})` 与脚本 `scripts/check-design-r
   },
   "texts": [{
     "id": "actual-node", "platform": "web", "language": "latin", "migration": "current",
+    "semanticRole": "contentBody", "usage": {"kind": "content", "purpose": "用户帖子正文，不是功能按钮"},
     "evidence": {"fileKey": "actual-file", "nodeId": "actual-node", "readAt": "ISO date"},
     "screenshot": {"reference": "实际截图路径或资源", "reviewed": true},
     "actual": {"type": "TEXT", "styleId": "actual-style", "fontFamily": "Open Sans", "fontWeight": 400, "fontSize": 16, "lineHeight": {"unit": "PIXELS", "value": 24}, "letterSpacing": {"unit": "PIXELS", "value": 0}},
@@ -35,3 +36,10 @@ MCP 工具 `craftime_check_design({readback})` 与脚本 `scripts/check-design-r
 - 例外保持单独记录，用户授权来源必须可追溯；不要篡改 expected 值让不符项通过。完整新页面设置 `scope.fullPage: true` 并覆盖 navigation 和 header；既有局部修改也须核对可能受父级或共享定义影响的固定区域。排除项不是通过项。
 
 输出仅为所提供记录的检查结果。范围完整性、来源真实性、视觉判断和 Present 交互仍由实际检查负责。
+
+
+## 语义字重检查 · 2026-11-02
+
+check-design-readback.mjs已接入check-typography.mjs，同一个craftime_check_design入口执行。对当前Web文字必须提供semanticRole和usage.kind/purpose；支持角色见[规则](typography-roles.json)。它先验证用途与600/400/700分工，再保留原有actual/expected样式对照。旧的Body/Caption400即使actual与expected完全一致，作为tab/control仍判有偏差；缺少语义记录为待验证。不能把按钮伪装为smallTag/content；检查器能发现kind冲突，真实用途仍需现场读取与截图确认。
+
+真实fontWeight与fontName.variationSettings.wght不一致时报偏差，不靠style字符串推断粗细。混合字重必须分段。历史字体/平台的排除不是通过；保留historicalSource等原证据要求。本检查不会自动访问Figma，也不会拦截所有写入；设计流程须实际调用它。用户已有较粗昵称、正文强调和明确例外保留，不为套默认反向改回400。

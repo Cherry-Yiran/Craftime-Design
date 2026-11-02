@@ -1257,5 +1257,19 @@
     "contextualReviewRequired": true,
     "machineCheckerDoesNotVerifyVisualSemantics": true,
     "localMeasurementsAreNotGlobalStandards": true
+  },
+  "latestTypographyRoleRule": {
+    "confirmedOn": "2026-11-02",
+    "source": "user instruction plus measured MakerWorld model page",
+    "functionalDefaultWeight": 600,
+    "contentDefaultWeight": 400,
+    "pageTitleWeight": 700,
+    "selectedAndUnselectedControlWeightSame": true,
+    "rulePath": "references/typography-roles.json",
+    "referenceUrl": "https://makerworld.com/en/models/3505604-gingerbread-man-christmas-paper-towel-holder#profileId-4005155",
+    "foundationFileModified": false,
+    "historicalMigrationAutomatic": false,
+    "referenceSizesAdopted": false,
+    "implementation": "semantic role + usage evidence check independent of actual/expected style equality"
   }
 }

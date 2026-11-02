@@ -4,7 +4,7 @@
 <rect width="1200" height="980" rx="24" fill="#F6F6F6"/>
 <text x="40" y="57" font-size="28" font-weight="700">Craftime / Design basics</text>
 <text x="40" y="87" font-size="15" style="fill:#6B6E70">Semantic colors, Web type and component references</text>
-<text x="1160" y="55" font-size="14" style="fill:#6B6E70" text-anchor="end">v0.4.0</text>
+<text x="1160" y="55" font-size="14" style="fill:#6B6E70" text-anchor="end">v0.4.2</text>
 <text x="1160" y="80" font-size="13" style="fill:#6B6E70" text-anchor="end">Snapshot: 2026-11-02</text>
 <rect x="32" y="116" width="1136" height="270" rx="16" fill="#FFFFFF"/>
 <text x="56" y="151" font-size="18" font-weight="600">Semantic colors</text>
@@ -58,9 +58,9 @@
 <text x="558" y="638" font-size="12" style="fill:#6B6E70" text-anchor="end">14 / 20 · 400</text>
 <text x="56" y="671" font-size="12" style="fill:#6B6E70">Secondary metadata</text>
 <text x="558" y="671" font-size="12" style="fill:#6B6E70" text-anchor="end">12 / 18 · 400</text>
-<text x="56" y="709" font-size="12" style="fill:#6B6E70">Read current styles for each platform and language.</text>
+<text x="56" y="709" font-size="12" style="fill:#6B6E70">Tabs, filters, actions, counters: 600, including unselected.</text>
 <text x="626" y="442" font-size="18" font-weight="600">Web buttons</text>
-<text x="626" y="470" font-size="13" style="fill:#6B6E70">Primary 600 / brand outline 400</text>
+<text x="626" y="470" font-size="13" style="fill:#6B6E70">New Web functional controls: 600</text>
 <rect x="626" y="494" width="72" height="30" rx="15" fill="#FF6C00"/>
 <text x="662.0" y="513.2" font-size="12" style="fill:#FFFFFF" font-weight="600" text-anchor="middle">Follow</text>
 <text x="778" y="514.0" font-size="14" style="fill:#6B6E70">S · min 72 × 30 · R15</text>
@@ -71,7 +71,7 @@
 <text x="686.0" y="632.6" font-size="16" style="fill:#FFFFFF" font-weight="600" text-anchor="middle">Follow</text>
 <text x="778" y="632.0" font-size="14" style="fill:#6B6E70">L · min 120 × 48 · R24</text>
 <rect x="626" y="673" width="72" height="30" rx="15" fill="#FFFFFF" stroke="#FF6C00"/>
-<text x="662" y="693" font-size="12" style="fill:#FF6C00" font-weight="400" text-anchor="middle">Follow</text>
+<text x="662" y="693" font-size="12" style="fill:#FF6C00" font-weight="600" text-anchor="middle">Follow</text>
 <text x="778" y="693" font-size="14" style="fill:#6B6E70">Brand outline · Web S</text>
 <rect x="32" y="752" width="1136" height="166" rx="16" fill="#FFFFFF"/>
 <text x="56" y="789" font-size="18" font-weight="600">Spacing &amp; shape references</text>
